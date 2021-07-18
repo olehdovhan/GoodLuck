@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "depositphotos_41303569-stock-illustration-casino-777-icon.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "depositphotos_41303569-stock-illustration-casino-777-icon-1.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
