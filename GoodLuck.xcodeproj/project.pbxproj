@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C1CA9E926A5971D00E2792D /* ChooseGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1CA9E826A5971D00E2792D /* ChooseGameViewController.swift */; };
+		0C1CA9EB26A5A3A500E2792D /* GameWebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1CA9EA26A5A3A500E2792D /* GameWebKitViewController.swift */; };
+		0C1CA9ED26A5FA1A00E2792D /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1CA9EC26A5FA1A00E2792D /* Link.swift */; };
 		0C753C5A26A49E3C00244240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C753C5926A49E3C00244240 /* AppDelegate.swift */; };
 		0C753C5C26A49E3C00244240 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C753C5B26A49E3C00244240 /* SceneDelegate.swift */; };
 		0C753C5E26A49E3C00244240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C753C5D26A49E3C00244240 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		0C1CA9E826A5971D00E2792D /* ChooseGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameViewController.swift; sourceTree = "<group>"; };
+		0C1CA9EA26A5A3A500E2792D /* GameWebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWebKitViewController.swift; sourceTree = "<group>"; };
+		0C1CA9EC26A5FA1A00E2792D /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		0C753C5626A49E3C00244240 /* GoodLuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodLuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C753C5926A49E3C00244240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C753C5B26A49E3C00244240 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +65,9 @@
 				0C753C5926A49E3C00244240 /* AppDelegate.swift */,
 				0C753C5B26A49E3C00244240 /* SceneDelegate.swift */,
 				0C753C5D26A49E3C00244240 /* ViewController.swift */,
+				0C1CA9EA26A5A3A500E2792D /* GameWebKitViewController.swift */,
 				0C753C5F26A49E3C00244240 /* Main.storyboard */,
+				0C1CA9EC26A5FA1A00E2792D /* Link.swift */,
 				0C1CA9E826A5971D00E2792D /* ChooseGameViewController.swift */,
 				0C753C6226A49E3D00244240 /* Assets.xcassets */,
 				0C753C6426A49E3D00244240 /* LaunchScreen.storyboard */,
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1CA9EB26A5A3A500E2792D /* GameWebKitViewController.swift in Sources */,
 				0C753C5E26A49E3C00244240 /* ViewController.swift in Sources */,
 				0C753C5A26A49E3C00244240 /* AppDelegate.swift in Sources */,
+				0C1CA9ED26A5FA1A00E2792D /* Link.swift in Sources */,
 				0C753C5C26A49E3C00244240 /* SceneDelegate.swift in Sources */,
 				0C1CA9E926A5971D00E2792D /* ChooseGameViewController.swift in Sources */,
 			);
