@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-GoodLuck/Pods-GoodLuck-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/YandexMobileMetrica.framework/YandexMobileMetrica
+${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetricaCrashes/YandexMobileMetricaCrashes.framework/YandexMobileMetricaCrashes

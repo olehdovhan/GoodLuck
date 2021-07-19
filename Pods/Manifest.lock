@@ -1,0 +1,21 @@
+PODS:
+  - YandexMobileMetrica/Dynamic (3.17.0):
+    - YandexMobileMetrica/Dynamic/Core (= 3.17.0)
+    - YandexMobileMetrica/Dynamic/Crashes (= 3.17.0)
+  - YandexMobileMetrica/Dynamic/Core (3.17.0)
+  - YandexMobileMetrica/Dynamic/Crashes (3.17.0):
+    - YandexMobileMetrica/Dynamic/Core
+
+DEPENDENCIES:
+  - YandexMobileMetrica/Dynamic (= 3.17.0)
+
+SPEC REPOS:
+  trunk:
+    - YandexMobileMetrica
+
+SPEC CHECKSUMS:
+  YandexMobileMetrica: 9e713c16bb6aca0ba63b84c8d7b8b86d32f4ecc4
+
+PODFILE CHECKSUM: e2e40eac7380e8a0cdafa0141445143d479054dc
+
+COCOAPODS: 1.10.1

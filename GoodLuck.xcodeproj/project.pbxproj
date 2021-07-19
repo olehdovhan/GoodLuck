@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		0C753C6126A49E3C00244240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C753C5F26A49E3C00244240 /* Main.storyboard */; };
 		0C753C6326A49E3D00244240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C753C6226A49E3D00244240 /* Assets.xcassets */; };
 		0C753C6626A49E3D00244240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C753C6426A49E3D00244240 /* LaunchScreen.storyboard */; };
+		0CB2A17926A6347000A83074 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 0CB2A17826A6347000A83074 /* SwiftPackageProductDependency */; };
+		90A95E9009E25B0F66381A0F /* Pods_GoodLuck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7070BAE15D6AEC8FDA28FEC2 /* Pods_GoodLuck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		0C753C6226A49E3D00244240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C753C6526A49E3D00244240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C753C6726A49E3D00244240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D98E11EE2D6FECCBBC2C0DD /* Pods-GoodLuck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLuck.release.xcconfig"; path = "Target Support Files/Pods-GoodLuck/Pods-GoodLuck.release.xcconfig"; sourceTree = "<group>"; };
+		28FC34BCBEBE086753133088 /* Pods-GoodLuck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodLuck.debug.xcconfig"; path = "Target Support Files/Pods-GoodLuck/Pods-GoodLuck.debug.xcconfig"; sourceTree = "<group>"; };
+		7070BAE15D6AEC8FDA28FEC2 /* Pods_GoodLuck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodLuck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB2A17926A6347000A83074 /* BuildFile in Frameworks */,
+				90A95E9009E25B0F66381A0F /* Pods_GoodLuck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				0C753C5826A49E3C00244240 /* GoodLuck */,
 				0C753C5726A49E3C00244240 /* Products */,
+				FE8081F56DBC8B33C53B1DCE /* Pods */,
+				3AEB5806B3319DAE7A88111E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +85,24 @@
 			path = GoodLuck;
 			sourceTree = "<group>";
 		};
+		3AEB5806B3319DAE7A88111E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7070BAE15D6AEC8FDA28FEC2 /* Pods_GoodLuck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE8081F56DBC8B33C53B1DCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28FC34BCBEBE086753133088 /* Pods-GoodLuck.debug.xcconfig */,
+				0D98E11EE2D6FECCBBC2C0DD /* Pods-GoodLuck.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +110,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C753C6A26A49E3D00244240 /* Build configuration list for PBXNativeTarget "GoodLuck" */;
 			buildPhases = (
+				E60D6AAB9792FF19E25BA8B1 /* [CP] Check Pods Manifest.lock */,
 				0C753C5226A49E3C00244240 /* Sources */,
 				0C753C5326A49E3C00244240 /* Frameworks */,
 				0C753C5426A49E3C00244240 /* Resources */,
+				E19EE47921A4DF7AB1C9A411 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GoodLuck;
+			packageProductDependencies = (
+				0CB2A17826A6347000A83074 /* SwiftPackageProductDependency */,
+			);
 			productName = GoodLuck;
 			productReference = 0C753C5626A49E3C00244240 /* GoodLuck.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 0C753C4D26A49E3C00244240;
+			packageReferences = (
+				0CB2A17726A6347000A83074 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = 0C753C5726A49E3C00244240 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +175,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E19EE47921A4DF7AB1C9A411 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodLuck/Pods-GoodLuck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodLuck/Pods-GoodLuck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodLuck/Pods-GoodLuck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60D6AAB9792FF19E25BA8B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodLuck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C753C5226A49E3C00244240 /* Sources */ = {
@@ -295,6 +372,7 @@
 		};
 		0C753C6B26A49E3D00244240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FC34BCBEBE086753133088 /* Pods-GoodLuck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +392,7 @@
 		};
 		0C753C6C26A49E3D00244240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D98E11EE2D6FECCBBC2C0DD /* Pods-GoodLuck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CB2A17726A6347000A83074 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CB2A17826A6347000A83074 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CB2A17726A6347000A83074 /* RemoteSwiftPackageReference */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C753C4E26A49E3C00244240 /* Project object */;
 }
