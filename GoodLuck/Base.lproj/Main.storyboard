@@ -78,30 +78,109 @@
                         <outlet property="progressBar" destination="2mQ-TB-iaG" id="f7z-4n-t97"/>
                         <outlet property="readyButtonOutlet" destination="Mz4-r0-NTe" id="QnW-cJ-iX8"/>
                         <outlet property="webView" destination="eI9-ow-E3d" id="Q13-kg-BNy"/>
+                        <segue destination="gVg-T2-8Od" kind="presentation" identifier="showChooseGameVC" modalPresentationStyle="fullScreen" id="eRw-gq-aBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84.057971014492765" y="-32.142857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Game View Controller-->
         <scene sceneID="C95-3H-XCu">
             <objects>
-                <viewController id="gVg-T2-8Od" sceneMemberID="viewController">
+                <viewController id="gVg-T2-8Od" customClass="ChooseGameViewController" customModule="GoodLuck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FTk-Eo-ub3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="w7X-eU-Rbd">
+                                <rect key="frame" x="82" y="57" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Lw3-zi-FlI"/>
+                                    <constraint firstAttribute="height" constant="50" id="SQ6-Py-cVk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" red="0.85144978760000001" green="0.68234229089999998" blue="0.26450270409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-wA-VRC">
+                                <rect key="frame" x="82" y="122" width="250" height="415"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnN-H1-pUs">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="133"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OnN-H1-pUs" secondAttribute="height" multiplier="250:133" id="11f-E3-0Mc"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="8eE-0o-WF0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="bookOfDead"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsO-OI-1Vr">
+                                        <rect key="frame" x="0.0" y="141" width="250" height="133"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="HJm-fc-A4W"/>
+                                            <constraint firstAttribute="width" secondItem="TsO-OI-1Vr" secondAttribute="height" multiplier="250:133" id="i3u-Wu-WZ7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="luckyLadySlots"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU5-az-AaL">
+                                        <rect key="frame" x="0.0" y="282" width="250" height="133"/>
+                                        <color key="backgroundColor" red="0.85144978760000001" green="0.68234229089999998" blue="0.26450270409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cU5-az-AaL" secondAttribute="height" multiplier="250:133" id="6yd-Ov-JO1"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="fGz-Av-ph9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <state key="normal" title="CONCENTRATION">
+                                            <color key="titleColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cU5-az-AaL" firstAttribute="width" secondItem="cU5-az-AaL" secondAttribute="height" multiplier="250:133" id="Ajg-w0-RjU"/>
+                                    <constraint firstItem="cU5-az-AaL" firstAttribute="width" secondItem="cU5-az-AaL" secondAttribute="height" multiplier="250:133" id="Rdb-zB-P5D"/>
+                                    <constraint firstItem="TsO-OI-1Vr" firstAttribute="width" secondItem="TsO-OI-1Vr" secondAttribute="height" multiplier="250:133" id="pha-Wh-Fco"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gpk-iM-mCh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w7X-eU-Rbd" firstAttribute="top" secondItem="Gpk-iM-mCh" secondAttribute="top" constant="13" id="1Kl-ID-NHt"/>
+                            <constraint firstItem="0Rh-wA-VRC" firstAttribute="width" secondItem="w7X-eU-Rbd" secondAttribute="width" id="4bb-Gm-7iG"/>
+                            <constraint firstItem="w7X-eU-Rbd" firstAttribute="centerX" secondItem="FTk-Eo-ub3" secondAttribute="centerX" id="IOO-lL-0g1"/>
+                            <constraint firstItem="0Rh-wA-VRC" firstAttribute="top" secondItem="w7X-eU-Rbd" secondAttribute="bottom" constant="15" id="f8g-33-82G"/>
+                            <constraint firstItem="0Rh-wA-VRC" firstAttribute="leading" secondItem="Gpk-iM-mCh" secondAttribute="leading" constant="82" id="jco-Rx-dBG"/>
+                            <constraint firstItem="Gpk-iM-mCh" firstAttribute="trailing" secondItem="0Rh-wA-VRC" secondAttribute="trailing" constant="82" id="xm3-vs-94k"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="IIb-uu-qaW" kind="presentation" modalPresentationStyle="fullScreen" id="jsA-x6-zC0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U45-Lg-Lgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="-32"/>
+            <point key="canvasLocation" x="660.86956521739137" y="-32.142857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lJB-Tz-eoM">
+            <objects>
+                <viewController id="IIb-uu-qaW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ozL-GK-ZEF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HbL-7h-rYa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiK-Wc-dFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="-32"/>
         </scene>
     </scenes>
     <resources>
         <image name="777" width="489" height="511.5"/>
+        <image name="bookOfDead" width="350" height="187"/>
+        <image name="luckyLadySlots" width="249.5" height="161.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

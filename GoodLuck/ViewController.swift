@@ -30,10 +30,11 @@ class ViewController: UIViewController {
     animateProgressBar()
     DispatchQueue.main.asyncAfter(deadline: .now()+4) {
       self.readyButtonOutlet.isHidden = false
+    }
+    DispatchQueue.main.asyncAfter(deadline: .now()+10) {
       guard let url = URL(string: "https://i.i-bbva.com/click.php?key=sv2n47z3n770fyx7tmjb&p=partner&c=creative&l=lander&off=offer&link=link" ) else { return }
       let link = URLRequest(url: url)
       self.webView.load(link)
-      print(self.webView.url)
     }
   }
   
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
       self.webView.isHidden = false
       
     } else {
-      
+      performSegue(withIdentifier: "showChooseGameVC", sender: sender)
     }
    
   }
